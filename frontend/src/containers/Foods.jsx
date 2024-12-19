@@ -7,7 +7,7 @@ export const Foods = ({
   match
 }) => {
   useEffect(() => {
-    fetchFoods(1)
+    fetchFoods(match.params.restaurantsId)
     .then((data) =>
       console.log(data)
     )
